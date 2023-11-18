@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="425.0" prefWidth="1157.0" style="-fx-background-color: wheat;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TugasBesarPerbaikan.KendaliRiwayatPemesanan">
+   <children>
+      <Button layoutX="518.0" layoutY="348.0" mnemonicParsing="false" onAction="#TombolOk" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: beige; -fx-border-radius: 5; -fx-border-color: salmon;" text="OK" />
+      <Label layoutX="363.0" layoutY="31.0" text="RIWAYAT PEMESANAN">
+         <font>
+            <Font name="Broadway" size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="TabelKeseluruhan" layoutX="11.0" layoutY="91.0" prefHeight="220.0" prefWidth="1127.0">
+        <columns>
+          <TableColumn fx:id="Nama" prefWidth="120.00002574920654" text="Nama" />
+          <TableColumn fx:id="KodeBus" prefWidth="137.71429443359375" text="Tujuan" />
+            <TableColumn fx:id="Kelas" prefWidth="228.5714111328125" text="Tanggal Keberangkatan" />
+            <TableColumn fx:id="Tujuan" prefWidth="137.142822265625" text="Kode Bus" />
+            <TableColumn fx:id="TanggalKeberangkatan" prefWidth="209.142822265625" text="Waktu Keberangkatan" />
+            <TableColumn fx:id="WaktuKeberangkatan" prefWidth="137.7142333984375" text="Harga" />
+            <TableColumn fx:id="Harga" prefWidth="158.85711669921875" text="Kelas" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="71.0" fitWidth="79.0" layoutX="167.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gambar/invoice.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="882.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gambar/invoice%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
